@@ -4,9 +4,16 @@ import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.Menu;
 import android.view.MenuItem;
+import android.widget.Button;
 
 public class QuizActivity extends AppCompatActivity {
 
+
+    //region Description
+
+    private Button mTrueButton;
+    private Button mFalseButton;
+    //endregion
     ////////////////////////////////
     /// the on create
     ////////////////////////////////
@@ -14,6 +21,9 @@ public class QuizActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_quiz);
+
+        this.mTrueButton = (Button)findViewById(R.id.true_button);
+        this.mFalseButton = (Button)findViewById(R.id.false_button);
     }
 
     ////////////////////////////////
